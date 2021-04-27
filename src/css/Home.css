@@ -22,7 +22,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-bottom: 30px;
   padding: 20px;
 }
 .form-row {
@@ -38,6 +37,36 @@ button {
 
 .title1 {
   margin-bottom: 30px;
+  background-color: #ffffffd1;
+  border-radius: 7px;
+}
+.brise {
+  background-image: url("../images/brise.png");
+  width: 211px;
+  height: 68px;
+}
+.fil {
+  background-image: url("../images/fille.png");
+  width: 211px;
+  height: 68px;
+}
+.fort {
+  background-image: url("../images/brulle.png");
+  width: 211px;
+  height: 68px;
+}
+
+.feeling{
+  background-color: rgb(211, 247, 248);
+  box-shadow: 0 0 2em rgb(185, 184, 184);
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 90vw;
+  margin-top: 30px;
+  padding: 20px;
+  color: black;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 536px) {

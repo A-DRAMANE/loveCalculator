@@ -13,7 +13,7 @@ export function Home() {
         <div className="container">
             <div className="title1">
                 <h1>LOVE CALCULATOR</h1>
-                <LoyaltyIcon/>
+                <LoyaltyIcon/> From fils du Faso
             </div>
 
             <h2 className="title1">Trouve ton % d'AMOUR</h2>
@@ -42,7 +42,8 @@ export function Home() {
                 <button onClick={() => Calcul(tonNom,sonNom)}>CALCULATE LOVE %</button>
             </div>
             <h1 className="pourcentage">...</h1>
-            <h2>sgksglsj</h2>
+            <div className="coeur"></div>
+            <h2 className="feeling"></h2>
         </div>
     )
 }

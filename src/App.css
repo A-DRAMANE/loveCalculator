@@ -8,5 +8,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(236, 233, 233);
+  background-image: url('./images/backF.png');
+  background-size: cover;
 }
