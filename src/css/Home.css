@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.form-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 1em rgb(204, 204, 203), 0 0 2em rgb(248, 18, 18);
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.form-row {
+  padding-bottom: 15px;
+}
+button {
+  background-color: green;
+  color: white;
+  width: 131px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.title1 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 536px) {
+  .form {
+    flex-direction: column;
+  }
+}

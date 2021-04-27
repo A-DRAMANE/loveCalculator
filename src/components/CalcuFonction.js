@@ -1,9 +1,10 @@
-import React from 'react'
+export async function Calcul(name1,name2) {
 
-export async function Calcul(nom1,nom2) {
-    const calculResponse = [];
+    console.log(name1,name2);
+    let pourcentage = document.querySelector('.pourcentage')
+    pourcentage.innerHTML = "Chargement..."
 
-    fetch(`https://love-calculator.p.rapidapi.com/getPercentage?fname=${nom1}&sname=${nom2}`, {
+    await fetch("https://love-calculator.p.rapidapi.com/getPercentage?fname="+ name1 +"&sname="+name2, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-key": "d24ff0ee3amshc0fc56cc0a62b3dp176859jsncaddd0907e0e",
@@ -12,7 +13,11 @@ export async function Calcul(nom1,nom2) {
     })
     .then(response => response.json())
     .then(response => {
-        console.log('a',response);
+
+        pourcentage.innerHTML = response.percentage + "%"
+        console.log("r",response);
+        console.log("p",pourcentage);
+        
     })
     .catch(err => {
         console.error(err);
