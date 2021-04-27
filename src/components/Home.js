@@ -10,8 +10,8 @@ export function Home() {
     function handleCalcule (){
         if (tonNom==="" || sonNom==="") {
             alert("vous devez remplir les noms")
+        }else Calcul(tonNom,sonNom);
         }
-        Calcul(tonNom,sonNom)}
     return (
         <div className="container">
             <div className="title1">
