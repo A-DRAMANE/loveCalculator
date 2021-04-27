@@ -36,11 +36,11 @@ export async function Calcul(name1,name2) {
             coeur.classList.toggle("brise")
         } else if (response.percentage >=41 && response.percentage <= 60){
             pourcentage.innerHTML = response.percentage + "%"
-            feeling.innerHTML = "Le fil qui tient votre amour, vous avez youte vos chance. Fortifiez ce t'AMOUR qui est le votre."
+            feeling.innerHTML = "Un fil qui tient votre amour, vous avez toute vos chance. Fortifiez cet AMOUR qui est le votre."
             coeur.classList.toggle("fil")
         }else{
             pourcentage.innerHTML = response.percentage + "%"
-            feeling.innerHTML = "WOUUUUUUH le feux brulle entre Vous cet amour est grand et fort, Cultivez le et vous serait plus qu'heureux."
+            feeling.innerHTML = "WOUUUUUUH le feux de l'amour brule entre Vous cet amour est grand et fort, Cultivez le et vous serait plus qu'heureux."
             coeur.classList.toggle("fort")
         }
         

@@ -34,6 +34,9 @@ button {
   padding: 5px;
   border-radius: 20px;
 }
+button:focus{
+  width: 131px;
+}
 
 .title1 {
   margin-bottom: 30px;
@@ -67,6 +70,20 @@ button {
   padding: 20px;
   color: black;
   font-size: 17px;
+}
+
+input {
+  padding: 0 10px;
+  width: 242px;
+  height: 38px;
+  border-radius: 10px;
+  border: 2px solid #a7200e;
+  font-family: "Poppins", sans-serif;
+}
+input:focus {
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0.5em red;
 }
 
 @media screen and (max-width: 536px) {

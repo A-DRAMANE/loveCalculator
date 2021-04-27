@@ -8,6 +8,9 @@ export function Home() {
     const [sonNom, setSonNom] = useState('');
 
     function handleCalcule (){
+        if (tonNom==="" || sonNom==="") {
+            alert("vous devez remplir les noms")
+        }
         Calcul(tonNom,sonNom)}
     return (
         <div className="container">
@@ -39,7 +42,7 @@ export function Home() {
                         />
                     </div>
                 </div>
-                <button onClick={() => Calcul(tonNom,sonNom)}>CALCULATE LOVE %</button>
+                <button onClick={handleCalcule}>CALCULATE LOVE %</button>
             </div>
             <h1 className="pourcentage">...</h1>
             <div className="coeur"></div>
